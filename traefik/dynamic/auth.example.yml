@@ -1,0 +1,8 @@
+http:
+  middlewares:
+    dashboard-auth:
+      basicAuth:
+        users:
+          # Generate with:
+          # htpasswd -nbm username password
+          - "username:$apr1$REPLACE_ME$REPLACE_ME"
